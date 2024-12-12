@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Anime Questionnaire</title>
+    <style>
+        /* Set a background image and customize it */
+        body {
+            background: url('https://your-background-image-link.com') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the content with padding */
+        .container {
+            width: 50%;
+            margin: 5% auto;
+            background: rgba(0, 0, 0, 0.8); /* Add transparency to the background */
+            border-radius: 15px;
+            padding: 20px 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style the header */
+        h1 {
+            text-align: center;
+            color: #FFD700; /* Gold color */
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style labels and inputs */
+        label {
+            font-size: 1.2rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="text"], input[type="number"], select {
+            background: #333333;
+            color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background: #FFD700;
+            color: #000;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #FFA500; /* Orange */
+            color: #fff;
+        }
+
+        /* Add responsiveness for smaller devices */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Favorite Anime Questionnaire</h1>
+        <form action="#" method="POST">
+            <label for="name">1. What is your name?</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="anime">2. What is your favorite anime?</label><br>
+            <input type="text" id="anime" name="anime" required><br>
+
+            <label for="genre">3. What genre is your favorite anime?</label><br>
+            <select id="genre" name="genre" required>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="sci-fi">Sci-Fi</option>
+            </select><br>
+
+            <label for="character">4. Who is your favorite character in the anime?</label><br>
+            <input type="text" id="character" name="character" required><br>
+
+            <label for="rating">5. How would you rate your favorite anime on a scale of 1 to 10?</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="10" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+    li><a href="index.html">back to home</a></li
